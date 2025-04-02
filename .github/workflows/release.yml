@@ -30,10 +30,8 @@ jobs:
       - name: Upload to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: Lw4dU9Z6
+          modrinth-id: g8uA0AU0
           modrinth-token: "${{ secrets.MODRINTH_TOKEN }}"
-          curseforge-id: 635348
-          curseforge-token: "${{ secrets.CF_API_TOKEN }}"
           name: "Our Villager Discounts ${{ steps.build.outputs.version }}-fabric"
           files: "build/libs/our-villager-discounts-${{ steps.build.outputs.version }}-fabric.jar"
           game-versions: "${{ steps.build.outputs.minecraftVersion }}"
